@@ -14,7 +14,7 @@ pipeline {
                     sh '''echo "Multiline shell steps work too"
                     ls -lah
                     '''
-                    s3Upload(file:'index.html', bucket:'jenkins-bucket', path:'/*')
+                    s3Upload(file:'index.html', bucket:'jenkins-bucket')
                     }
                 }
             }
