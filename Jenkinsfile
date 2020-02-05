@@ -13,6 +13,7 @@ pipeline {
         sh '''echo "Multiline shell steps work too"
                       ls -lah
                   '''
+        s3Upload 'jenkins-bucket'
       }
     }
 
